@@ -60,6 +60,8 @@ h1, h2, h3 {
 }
 p, a, li, blockquote {
   font-family: var(--font-primary);
+}
+p{
   cursor: default;
 }
 /*HOME PAGE STYLING*/
