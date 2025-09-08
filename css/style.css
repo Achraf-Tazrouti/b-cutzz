@@ -58,7 +58,7 @@ h1, h2, h3 {
   letter-spacing: 1px;
   cursor: default;
 }
-p, a, li, blockquote {
+p, a, li {
   font-family: var(--font-primary);
 }
 p{
@@ -136,6 +136,7 @@ nav{
 /*main home*/
 .cuts-main-grid{
   display: grid;
+  gap: 10px 10px;
   grid-template-columns: repeat(4, 1fr); 
 }
 .intro-block {
@@ -336,7 +337,7 @@ nav{
     font-size: var(--fs-xs);
     padding: 6px 15px;
   }
-  .intro-block h2{
+  .intro-block h2{ 
     font-size: var(--fs-xl);
   }
   .intro-block p{
@@ -344,6 +345,20 @@ nav{
     font-size: var(--fs-md);
     margin-bottom: var(--sp-4);
     line-height: var(line-height);
+  }
+  .footer-grid{
+    flex-direction: column;
+  }
+  .accordion-content {
+    display: none; /* Verberg de inhoud standaard */
+  }
+  
+  .accordion-header {
+    cursor: pointer; /* Geef aan dat het klikbaar is */
+  }
+  
+  .footer-column.active .accordion-content {
+    display: block; 
   }
   
 }

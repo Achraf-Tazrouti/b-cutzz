@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- voor de iconen -->
-
+    <script src="./script.js" defer></script>
 </head>
 <body class="body-home">
     <section class="hero">
@@ -52,34 +52,33 @@
         <footer class="footer">
             <div class="footer-grid">
                 <div id="contact" class="footer-column">
-                    <h3><i class="fa-solid fa-id-card"></i> Contact</h3>
-                  
-                    <a href="https://www.google.com/maps/place/Ringlaan,+Willebroek" target="_blank">
-                      <i class="fa-solid fa-location-dot"></i> Willebroek, Ringlaan
-                    </a>
-                  
-                    <a href="tel:012345678">
-                      <i class="fa-solid fa-phone"></i> 012 34 56 78
-                    </a>
-                  
-                    <a href="https://www.instagram.com/b_cutzz30?utm_source=ig_web_button_share_sheet&igsh=MW8zc2NuYXg4NjAwbQ==" target="_blank">
-                      <i class="fa-brands fa-instagram"></i> b_cutzz
-                    </a>
-                  
-                    <p><i class="fa-solid fa-clock"></i> 10:00 - 20:00</p>
+                    <h3 class="accordion-header"><i class="fa-solid fa-id-card"></i> Contact</h3>
+                    <div class="accordion-content">
+                        <a href="https://www.google.com/maps/place/Ringlaan,+Willebroek" target="_blank">
+                            <i class="fa-solid fa-location-dot"></i> Willebroek, Ringlaan
+                        </a>
+                        <a href="tel:012345678">
+                            <i class="fa-solid fa-phone"></i> 012 34 56 78
+                        </a>
+                        <a href="https://www.instagram.com/b_cutzz30?utm_source=ig_web_button_share_sheet&igsh=MW8zc2NuYXg4NjAwbQ==" target="_blank">
+                            <i class="fa-brands fa-instagram"></i> b_cutzz
+                        </a>
+                        <p><i class="fa-solid fa-clock"></i> 10:00 - 20:00</p>
+                    </div>
                 </div>
-                  
+
+                <div class="footer-column">
+                    <h3 class="accordion-header"><i class="fa-solid fa-scissors"></i> Diensten</h3>
+                    <div class="accordion-content">
+                        <p>Knippen & Baard</p>
+                        <p>Fade & Styling</p>
+                        <p>Kapsels op maat</p>
+                    </div>
+                </div>
               
                 <div class="footer-column">
-                  <h3><i class="fa-solid fa-scissors"></i> Diensten</h3>
-                  <p>Knippen & Baard</p>
-                  <p>Fade & Styling</p>
-                  <p>Kapsels op maat</p>
-                </div>
-              
-                <div class="footer-column">
-                    <h3><i class="fa-regular fa-star"></i> Reviews</h3>
-                    <div class="reviews-box">
+                    <h3 class="accordion-header"><i class="fa-regular fa-star"></i> Reviews</h3>
+                    <div class="reviews-box accordion-content">
                       <p>"Top service en geweldige knipbeurt!" – Jozef.</p>
                       <p>"Altijd tevreden na een bezoek aan B-CUTZZ." – Mohammed L.</p>
                       <p>"Professioneel en vriendelijk personeel." – Yousef K.</p>
