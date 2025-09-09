@@ -193,18 +193,16 @@ nav{
   justify-content: space-around;
   align-items: start;
   gap: 2rem;
-  padding: 3rem;
-  width: 100%;
+  padding: 3rem 3rem 3rem 2rem;
 }
 
 
 .footer-column {
-  flex: 1;
   padding: 0 1rem;
   border-left: 1px solid rgba(255, 32, 32, 0.974);
 }
 .footer-column:nth-child(2) p {
-  margin-bottom: 1rem; 
+  margin-bottom: 1.3rem; 
 }
 .footer-column a{
   display: block;
@@ -236,9 +234,7 @@ nav{
   gap: 6px;  
   color: var(--text); 
   text-decoration:underline ;
-  background: rgba(255, 255, 255, 0.084);
-  padding: 1rem;
-  border-radius: 6px;
+  background: var(--accent);
   padding:.6rem .9rem; border-radius:.6rem;
   border:1px solid var(--bg_nav);
   font-weight:500;
@@ -247,20 +243,20 @@ nav{
 
 .footnote{
   background-color: var(--bg_nav);
-  display:flex; align-items:center;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
+  padding: 15px 0;
   color: white; font-size:var(--fs-sm); 
   border-top:2px solid rgba(255, 0, 0, 0.127);
 }
 
 .footnote .credit {
+  color: var(--accent);
   font-size: inherit;
 }
 
 .credit:hover {
-  color: var(--accent); /* Verander de kleur bij hover */
-  cursor: pointer; /* Zorg ervoor dat de cursor verandert */
+  color: var(--accent); 
+  cursor: pointer; 
 }
 
 /* responsive */
