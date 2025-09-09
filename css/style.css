@@ -47,6 +47,7 @@
   padding:0;
 }
 body,html {
+  scroll-behavior: smooth;
   width: 100%;
   font-family: var(--font-primary);
   box-sizing: border-box;
@@ -162,7 +163,7 @@ nav{
   color: var(--accent);
 }
 .intro-block{
-  border: 10px solid rgba(255, 32, 32, 0.063);
+  border: 7px solid rgba(255, 32, 32, 0.063);
   box-shadow: var(--shadow);
 }
 
@@ -391,6 +392,7 @@ nav{
   row-gap: 20px;
 }
 .prices-title{
+  text-align: center;
   font-size: var(--fs-2xl);
   color: var(--text);
   text-shadow: 2px 2px 4px var(--gold);
