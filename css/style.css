@@ -90,9 +90,9 @@ nav{
   box-shadow:var(--shadow);
 }
 .pages-nav strong a {
-  font-weight: bold; /* Maak de tekst dikker */
-  color: var(--gold); /* Geef het een opvallende kleur */
-  text-decoration: underline; /* Voeg een onderstreping toe (optioneel) */
+  font-weight: bold; 
+  color: var(--gold); 
+  text-decoration: underline; 
 }
 /*left section*/
 .brand{
@@ -371,7 +371,7 @@ nav{
 /*styling for price page*/
 
 :root{
-  --text-prices: #333333; 
+  --title-prices: #333333; 
   --gold: #c3a269;           /* jouw accentkleur/goud */
   --panel-bg: rgba(0, 0, 0, 0.74);
   --panel-border: rgba(195,162,105,.6);
@@ -386,7 +386,7 @@ nav{
   background-position: center;
 }
 .prices-main{
-  margin: 8px 45px 7px 45px;
+  margin: 8px 8px 7px 8px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
