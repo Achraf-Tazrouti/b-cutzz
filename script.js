@@ -1,19 +1,15 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const headers = document.querySelectorAll(".accordion-header");
-  
-    headers.forEach(header => {
-      header.addEventListener("click", () => {
-        const parent = header.parentElement;
-  
-        // Sluit alle andere open accordeons
-        document.querySelectorAll(".footer-column").forEach(column => {
-          if (column !== parent) {
-            column.classList.remove("active");
-          }
+const titles = document.querySelectorAll(".footer-title");
+
+titles.forEach(title => {
+    title.addEventListener("click",()=>{
+        console.log(title)
+        const header = title.parentElement;
+        console.log(header)
+        document.querySelectorAll(".footer-column").forEach(column=>{
+            if (column !== header) {
+                column.classList.remove("active")
+            }
         });
-  
-        // Toggle de actieve klasse op de huidige kolom
-        parent.classList.toggle("active");
-      });
-    });
-  });
+        header.classList.toggle("active")
+    })
+});

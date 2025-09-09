@@ -53,7 +53,7 @@ body,html {
   box-sizing: border-box;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: var(--font-secondary);
   letter-spacing: 1px;
   cursor: default;
@@ -181,7 +181,7 @@ nav{
   transition: all 2s;
 }
 /* footer */
-.footer-grid {
+.footer-flex {
   background-color: #111; /* of iets donkergrijs */
   color: var(--text);
   display: flex;
@@ -206,24 +206,20 @@ nav{
   width: fit-content;
 }
 
-.footer-grid h3 {
+.footer-title {
   width: fit-content;
   margin-bottom: 1rem;
   font-size: 1.3rem;
-  color: var(--accent); /* zelfde bruin tint */
+  color: var(--accent); 
   text-transform: uppercase;
 }
-.footer-grid h3:hover{
-  color: #c67b3a;
+.footer-column h3:hover{
+  color: #d76b12;
   cursor: default;
 }
-.footer-grid a:hover{
-  color: var(--accent);
-  cursor: pointer;
-  text-decoration: underline;
-}
 
-.footer-grid p, .footer blockquote, .footer a {
+
+.footer-flex p, .footer a {
   margin: 0.5rem 0;
   font-size: var(--fs-2xs);
 }
@@ -245,23 +241,22 @@ nav{
 }
 
 .footnote{
+  background-color: var(--bg_nav);
   display:flex; align-items:center;
-  color:#aaa; font-size:.9rem; gap:.5rem; 
-  padding-top:1rem;
-  border-top:4px solid rgba(255, 0, 0, 0.127);
+  justify-content: center;
+  flex-direction: column;
+  color: white; font-size:var(--fs-sm); 
+  border-top:2px solid rgba(255, 0, 0, 0.127);
 }
 
-.credit{
-  color: var(--accent);
-  font-weight: 600;
+.footnote .credit {
+  font-size: inherit;
 }
-.credit:hover{
-  color: #901717;
-  cursor: pointer;
+
+.credit:hover {
+  color: var(--accent); /* Verander de kleur bij hover */
+  cursor: pointer; /* Zorg ervoor dat de cursor verandert */
 }
-.credit :active{
-  transform: scale(.95);
-} 
 
 /* responsive */
 
@@ -307,6 +302,9 @@ nav{
     justify-content: center;
     gap: 5px;
   }
+  .footnote{
+    font-size: var(--fs-2xs);
+  }
 }
 @media screen and (max-width: 426px) {
   nav{
@@ -346,19 +344,21 @@ nav{
     margin-bottom: var(--sp-4);
     line-height: var(line-height);
   }
-  .footer-grid{
+  .footer-flex{
     flex-direction: column;
   }
-  .accordion-content {
-    display: none; /* Verberg de inhoud standaard */
+  .footer-content{
+    display: none;
+  }
+
+  .footer-column.active .footer-content{
+    display: block;
+  }
+  .footer-column.active .footer-title{
+    color: rgb(181, 86, 86);
   }
   
-  .accordion-header {
-    cursor: pointer; /* Geef aan dat het klikbaar is */
+  .reviews-box p{
+    width: max-content;
   }
-  
-  .footer-column.active .accordion-content {
-    display: block; 
-  }
-  
 }
