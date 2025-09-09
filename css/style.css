@@ -47,7 +47,6 @@
   padding:0;
 }
 body,html {
-  overflow-x: hidden;
   width: 100%;
   font-family: var(--font-primary);
   box-sizing: border-box;
@@ -88,6 +87,11 @@ nav{
   align-items: center;
   justify-content: space-around;
   box-shadow:var(--shadow);
+}
+.pages-nav strong a {
+  font-weight: bold; /* Maak de tekst dikker */
+  color: var(--gold); /* Geef het een opvallende kleur */
+  text-decoration: underline; /* Voeg een onderstreping toe (optioneel) */
 }
 /*left section*/
 .brand{
@@ -361,4 +365,61 @@ nav{
   .reviews-box p{
     width: max-content;
   }
+}
+
+/*styling for price page*/
+
+:root{
+  --text-prices: #333333; 
+  --gold: #c3a269;           /* jouw accentkleur/goud */
+  --panel-bg: rgba(0, 0, 0, 0.74);
+  --panel-border: rgba(195,162,105,.6);
+  --divider: rgba(255,255,255,.12);
+}
+
+.prices-hero{
+  background-image:
+  linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,.7)),
+    url("../images/tools-profession-hairdresser.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.prices-main{
+  margin: 8px 45px 7px 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.prices-title{
+  font-size: var(--fs-2xl);
+  color: var(--text);
+  text-shadow: 2px 2px 4px var(--gold);
+}
+.panel{
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  color: var(--text);
+}
+.panel-title{
+  font-size: var(--fs-xl);
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 0;
+  border-bottom: 2px solid var(--divider);
+}
+.label{
+  font-size: var(--fs-lg);
+  color: var(--gold);
+}
+.amount{
+  font-size: var(--fs-lg);
+  color: var(--gold);
+  font-weight: 600;
 }
